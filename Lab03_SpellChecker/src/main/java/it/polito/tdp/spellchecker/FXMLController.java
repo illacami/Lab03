@@ -115,7 +115,7 @@ public class FXMLController {
 
     	
     	inputText = inputText.replaceAll("\n", " ");
-		inputText = inputText.replaceAll("[.,\\/#!$%\\^&\\*;:{}=\\-_`~()\\[\\]]", "");
+		inputText = inputText.replaceAll("[.,\\/#?!$%\\^&\\*;:{}=\\-_`~()\\[\\]]", "");
 		StringTokenizer st = new StringTokenizer(inputText, " ");
 		while (st.hasMoreTokens()) {
 			inputTextList.add(st.nextToken());
